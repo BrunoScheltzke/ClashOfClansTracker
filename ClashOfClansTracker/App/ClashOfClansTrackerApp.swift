@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct ClashOfClansTrackerApp: App {
-    @StateObject var appMainStore: AppMainStore = AppMainStore(initialState: .launch, reducer: appReducer)
+    @StateObject var appMainStore: AppMainStore = AppMainStore(initialState: .launch, reducer: appReducer, middlewares: [loginMiddleware()])
 
     var body: some Scene {
         WindowGroup {

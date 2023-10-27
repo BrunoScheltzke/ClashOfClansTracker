@@ -18,6 +18,7 @@ enum AppState {
 
 enum AppAction {
     case appOpened
+    case displayOnboarding
     case completeOnboarding
     case loginTapped
     case logoutTapped
@@ -26,6 +27,8 @@ enum AppAction {
 let appReducer: Reducer<AppState, AppAction> = { state, action in
     switch action {
     case .appOpened:
+        return .launch
+    case .displayOnboarding:
         return .onboarding
     case .completeOnboarding:
         return .loggedOut

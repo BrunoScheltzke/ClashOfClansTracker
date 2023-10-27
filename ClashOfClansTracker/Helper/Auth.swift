@@ -5,48 +5,53 @@
 //  Created by Bruno Scheltzke on 27/10/23.
 //
 
+import Combine
 import Foundation
+import KeychainAccess
 
-class Auth: ObservableObject {
+func loginMiddleware() -> Middleware<AppState, AppAction> {
+    { state, action in
+        switch action {
+        case .appOpened:
+            if !Auth().hasSeenOnboarding() {
+                return Just(.displayOnboarding).eraseToAnyPublisher()
+            }
+            // attempt automatic login
+            return Just(.logoutTapped).delay(for: 2, scheduler: DispatchQueue.main).eraseToAnyPublisher()
+        case .completeOnboarding:
+            Auth().setOnboardingAsSeen()
+        default: break
+        }
+        return Empty().eraseToAnyPublisher()
+    }
+}
 
-//    private let keychain: KeychainWrapper = KeychainWrapper.standard
+class Auth {
+    private let userDefaults: UserDefaults = .standard
+    private let keychain = Keychain()
+    private let hasSeenKey = "hasSeenKey"
 
-    @Published var loggedIn: Bool = false
-
-    private init() {
-//        loggedIn = hasAccessToken()
+    func hasSeenOnboarding() -> Bool {
+        userDefaults.bool(forKey: hasSeenKey)
     }
 
-//    func getCredentials() -> Credentials {
-//        return Credentials(
-//            accessToken: keychain.string(forKey: KeychainKey.accessToken.rawValue),
-//            refreshToken: keychain.string(forKey: KeychainKey.refreshToken.rawValue)
-//        )
-//    }
-//
-//    func setCredentials(accessToken: String, refreshToken: String) {
-//        keychain.set(accessToken, forKey: KeychainKey.accessToken.rawValue)
-//        keychain.set(refreshToken, forKey: KeychainKey.refreshToken.rawValue)
-//
-//        loggedIn = true
-//    }
+    func setOnboardingAsSeen() {
+        userDefaults.setValue(true, forKey: hasSeenKey)
+    }
 
-//    func hasAccessToken() -> Bool {
-//        return getCredentials().accessToken != nil
-//    }
-//
-//    func getAccessToken() -> String? {
-//        return getCredentials().accessToken
-//    }
-//
-//    func getRefreshToken() -> String? {
-//        return getCredentials().refreshToken
-//    }
-//
-//    func logout() {
-//        KeychainWrapper.standard.removeObject(forKey: KeychainKey.accessToken.rawValue)
-//        KeychainWrapper.standard.removeObject(forKey: KeychainKey.refreshToken.rawValue)
-//
-//        loggedIn = false
-//    }
+    func attemptExistingLogin() {
+        
+    }
+
+    func login(username: String, password: String) {
+
+    }
+
+    func removeLocalCredentials() {
+
+    }
+
+    private func storeLoginCredentials(username: String, password: String) {
+
+    }
 }
