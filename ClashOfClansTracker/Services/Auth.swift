@@ -5,27 +5,10 @@
 //  Created by Bruno Scheltzke on 27/10/23.
 //
 
-import Combine
 import Foundation
 import KeychainAccess
 
-func loginMiddleware() -> Middleware<AppState, AppAction> {
-    { state, action in
-        switch action {
-        case .appOpened:
-            if !Auth().hasSeenOnboarding() {
-                return Just(.displayOnboarding).eraseToAnyPublisher()
-            }
-            // attempt automatic login
-            return Just(.logoutTapped).delay(for: 2, scheduler: DispatchQueue.main).eraseToAnyPublisher()
-        case .completeOnboarding:
-            Auth().setOnboardingAsSeen()
-        default: break
-        }
-        return Empty().eraseToAnyPublisher()
-    }
-}
-
+// TODO: wrap with a protocol
 class Auth {
     private let userDefaults: UserDefaults = .standard
     private let keychain = Keychain()

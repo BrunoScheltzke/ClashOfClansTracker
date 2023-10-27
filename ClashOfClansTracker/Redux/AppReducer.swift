@@ -9,21 +9,6 @@ import Foundation
 
 typealias AppMainStore = Store<AppState, AppAction>
 
-struct AppState {
-    var loginState: LoginState
-}
-
-enum LoginState {
-    case loggedIn(user: User)
-    case loggedOut
-    case attemptingAutomaticLogin // attemps to automatically log in when opening the app
-    case firstTime // first time opening the app. Mainly for displaying the onboarding screen
-}
-
-struct User {
-
-}
-
 enum AppAction {
     case appOpened
     case displayOnboarding

@@ -8,6 +8,9 @@
 import Combine
 import Foundation
 
+typealias Reducer<State, Action> = (State, Action) -> State
+typealias Middleware<State, Action> = (State, Action) -> AnyPublisher<Action, Never>
+
 class Store<State, Action>: ObservableObject {
     @Published private(set) var state: State
     private let reducer: Reducer<State, Action>
@@ -45,6 +48,3 @@ class Store<State, Action>: ObservableObject {
         state = newState
     }
 }
-
-typealias Reducer<State, Action> = (State, Action) -> State
-typealias Middleware<State, Action> = (State, Action) -> AnyPublisher<Action, Never>

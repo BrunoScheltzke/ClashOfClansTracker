@@ -9,7 +9,30 @@ import SwiftUI
 
 struct HomeScreen: View {
     var body: some View {
-        Text("home")
+        NavigationStack {
+            ScrollView {
+                LazyVGrid(columns: [GridItem(spacing: 16), GridItem(spacing: 16), GridItem(spacing: 16)], spacing: 16) {
+                    ForEach(TownHall.allCases.reversed(), id: \.rawValue) { townHall in
+                        ZStack {
+                            Rectangle()
+                                .foregroundStyle(.gray.opacity(0.2))
+                                .blur(radius: 3)
+                            VStack {
+                                Image(townHall.image)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                Text("TH\(townHall.rawValue)")
+                                    .font(.headline)
+                            }
+                            .shadow(radius: 12)
+                        }
+                    }
+                }
+                .padding()
+                .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Select a Town hall")
+            }
+        }
     }
 }
 
