@@ -14,11 +14,11 @@ struct RootScreen: View {
         TabView {
             HomeScreen()
                 .tabItem {
-                    Label("Home", systemImage: "house")
+                    Label("home", systemImage: "house")
                 }
             SettingsScreen()
                 .tabItem {
-                    Label("Settings", systemImage: "gearshape")
+                    Label("settings", systemImage: "gearshape")
                 }
         }
     }

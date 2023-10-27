@@ -20,6 +20,7 @@
 		C8BE2FB52AEABBCB00B8608E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BE2FB42AEABBCB00B8608E /* Preview Assets.xcassets */; };
 		C8BE2FBC2AEABBEB00B8608E /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BE2FBB2AEABBEB00B8608E /* Redux.swift */; };
 		C8F7E63F2AEC5CAB0088F16A /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7E63E2AEC5CAB0088F16A /* SettingsScreen.swift */; };
+		C8F7E6412AEC5F510088F16A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C8F7E6402AEC5F510088F16A /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C8BE2FB42AEABBCB00B8608E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C8BE2FBB2AEABBEB00B8608E /* Redux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux.swift; sourceTree = "<group>"; };
 		C8F7E63E2AEC5CAB0088F16A /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		C8F7E6402AEC5F510088F16A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				C8BE2FB32AEABBCB00B8608E /* Preview Content */,
 				C89B94862AEBF82600082FB0 /* Helper */,
 				C899346D2AEBED2200CE59DB /* Screens */,
+				C8F7E6402AEC5F510088F16A /* Localizable.xcstrings */,
 			);
 			path = ClashOfClansTracker;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = C8BE2FA12AEABBCA00B8608E;
 			packageReferences = (
@@ -183,6 +187,7 @@
 			files = (
 				C8BE2FB52AEABBCB00B8608E /* Preview Assets.xcassets in Resources */,
 				C8BE2FB22AEABBCB00B8608E /* Assets.xcassets in Resources */,
+				C8F7E6412AEC5F510088F16A /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
