@@ -7,16 +7,18 @@
 
 import Foundation
 
-enum BaseCategory {
+enum BaseCategory: CaseIterable {
     case war
     case farming
     case defense
     case troll
+
+    var text: String { String(describing: self) }
 }
 
-struct BaseLayout {
+struct BaseLayout: Hashable {
     let image: String
-    let townHallLevel: Int
+    let townHall: TownHall
     let link: String
     let category: BaseCategory
 }

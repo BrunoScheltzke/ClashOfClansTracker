@@ -1,11 +1,55 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "bases" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bases"
+          }
+        }
+      }
+    },
+    "bestbasesforth%lld" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Best bases for TH"
+          }
+        }
+      }
+    },
     "Complete Login" : {
 
     },
     "Complete onboarding" : {
 
+    },
+    "emptybaselist" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No base layout found"
+          }
+        }
+      }
+    },
+    "filter" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filter"
+          }
+        }
+      }
     },
     "home" : {
       "extractionState" : "manual",
@@ -27,11 +71,33 @@
     "Launch Screen!" : {
 
     },
+    "layout" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout"
+          }
+        }
+      }
+    },
     "Login" : {
 
     },
     "Onboarding" : {
 
+    },
+    "reset" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset"
+          }
+        }
+      }
     },
     "Select a Town hall" : {
 

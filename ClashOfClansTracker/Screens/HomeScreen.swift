@@ -13,18 +13,23 @@ struct HomeScreen: View {
             ScrollView {
                 LazyVGrid(columns: [GridItem(spacing: 16), GridItem(spacing: 16), GridItem(spacing: 16)], spacing: 16) {
                     ForEach(TownHall.allCases.reversed(), id: \.rawValue) { townHall in
-                        ZStack {
-                            Rectangle()
-                                .foregroundStyle(.gray.opacity(0.2))
-                                .blur(radius: 3)
-                            VStack {
-                                Image(townHall.image)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                Text("TH\(townHall.rawValue)")
-                                    .font(.headline)
+                        NavigationLink {
+                            BaseLayoutScreen(townHall: townHall)
+                        } label: {
+                            ZStack {
+                                Rectangle()
+                                    .foregroundStyle(.gray.opacity(0.2))
+                                    .blur(radius: 3)
+                                VStack {
+                                    Image(townHall.image)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                    Text("TH\(townHall.rawValue)")
+                                        .font(.headline)
+                                        .foregroundStyle(.black)
+                                }
+                                .shadow(radius: 12)
                             }
-                            .shadow(radius: 12)
                         }
                     }
                 }
