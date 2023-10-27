@@ -9,32 +9,42 @@ import Foundation
 
 typealias AppMainStore = Store<AppState, AppAction>
 
-enum AppState {
-    case launch
-    case loggedIn
+struct AppState {
+    var loginState: LoginState
+}
+
+enum LoginState {
+    case loggedIn(user: User)
     case loggedOut
-    case onboarding
+    case attemptingAutomaticLogin // attemps to automatically log in when opening the app
+    case firstTime // first time opening the app. Mainly for displaying the onboarding screen
+}
+
+struct User {
+
 }
 
 enum AppAction {
     case appOpened
     case displayOnboarding
     case completeOnboarding
-    case loginTapped
     case logoutTapped
+    case completeLogin(user: User)
 }
 
 let appReducer: Reducer<AppState, AppAction> = { state, action in
+    var mutatingState = state
     switch action {
     case .appOpened:
-        return .launch
+        mutatingState.loginState = .attemptingAutomaticLogin
     case .displayOnboarding:
-        return .onboarding
+        mutatingState.loginState = .firstTime
     case .completeOnboarding:
-        return .loggedOut
-    case .loginTapped:
-        return .loggedIn
+        mutatingState.loginState = .loggedOut
     case .logoutTapped:
-        return .loggedOut
+        mutatingState.loginState = .loggedOut
+    case .completeLogin(user: let user):
+        mutatingState.loginState = .loggedIn(user: user)
     }
+    return mutatingState
 }

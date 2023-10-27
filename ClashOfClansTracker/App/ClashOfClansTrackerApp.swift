@@ -9,19 +9,19 @@ import SwiftUI
 
 @main
 struct ClashOfClansTrackerApp: App {
-    @StateObject var appMainStore: AppMainStore = AppMainStore(initialState: .launch, reducer: appReducer, middlewares: [loginMiddleware()])
+    @StateObject var appMainStore: AppMainStore = AppMainStore(initialState: .init(loginState: .attemptingAutomaticLogin), reducer: appReducer, middlewares: [loginMiddleware()])
 
     var body: some Scene {
         WindowGroup {
             VStack {
-                switch appMainStore.state {
-                case .launch:
+                switch appMainStore.state.loginState {
+                case .attemptingAutomaticLogin:
                     LaunchScreen()
                 case .loggedIn:
                     RootScreen()
                 case .loggedOut:
                     LoginScreen()
-                case .onboarding:
+                case .firstTime:
                     OnboardingScreen()
                 }
             }

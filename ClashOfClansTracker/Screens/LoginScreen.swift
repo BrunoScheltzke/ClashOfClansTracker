@@ -13,7 +13,6 @@ struct LoginScreen: View {
     var body: some View {
         Text("Login")
         Button {
-            store.dispatch(action: .loginTapped)
         } label: {
             Text("Complete Login")
         }
