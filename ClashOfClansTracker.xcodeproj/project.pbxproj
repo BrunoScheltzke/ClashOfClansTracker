@@ -19,6 +19,7 @@
 		C8BE2FB22AEABBCB00B8608E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BE2FB12AEABBCB00B8608E /* Assets.xcassets */; };
 		C8BE2FB52AEABBCB00B8608E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BE2FB42AEABBCB00B8608E /* Preview Assets.xcassets */; };
 		C8BE2FBC2AEABBEB00B8608E /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BE2FBB2AEABBEB00B8608E /* Redux.swift */; };
+		C8F7E63F2AEC5CAB0088F16A /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7E63E2AEC5CAB0088F16A /* SettingsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C8BE2FB12AEABBCB00B8608E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8BE2FB42AEABBCB00B8608E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C8BE2FBB2AEABBEB00B8608E /* Redux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux.swift; sourceTree = "<group>"; };
+		C8F7E63E2AEC5CAB0088F16A /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				C89934702AEBED3F00CE59DB /* RootScreen.swift */,
 				C89934722AEBED4C00CE59DB /* HomeScreen.swift */,
 				C89934742AEBEE2700CE59DB /* LaunchScreen.swift */,
+				C8F7E63E2AEC5CAB0088F16A /* SettingsScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				C89934732AEBED4C00CE59DB /* HomeScreen.swift in Sources */,
 				C8BE2FAE2AEABBCA00B8608E /* ClashOfClansTrackerApp.swift in Sources */,
 				C899346C2AEBED1600CE59DB /* LoginScreen.swift in Sources */,
+				C8F7E63F2AEC5CAB0088F16A /* SettingsScreen.swift in Sources */,
 				C89934712AEBED3F00CE59DB /* RootScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

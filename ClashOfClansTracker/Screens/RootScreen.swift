@@ -11,11 +11,15 @@ struct RootScreen: View {
     @EnvironmentObject var store: AppMainStore
 
     var body: some View {
-        Text("Root")
-        Button {
-            store.dispatch(action: .logoutTapped)
-        } label: {
-            Text("Logout")
+        TabView {
+            HomeScreen()
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            SettingsScreen()
+                .tabItem {
+                    Label("Settings", systemImage: "gearshape")
+                }
         }
     }
 }

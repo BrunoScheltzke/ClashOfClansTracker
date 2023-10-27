@@ -14,16 +14,17 @@ struct ClashOfClansTrackerApp: App {
     var body: some Scene {
         WindowGroup {
             VStack {
-                switch appMainStore.state.loginState {
-                case .attemptingAutomaticLogin:
-                    LaunchScreen()
-                case .loggedIn:
-                    RootScreen()
-                case .loggedOut:
-                    LoginScreen()
-                case .firstTime:
-                    OnboardingScreen()
-                }
+                RootScreen()
+//                switch appMainStore.state.loginState {
+//                case .attemptingAutomaticLogin:
+//                    LaunchScreen()
+//                case .loggedIn:
+//                    RootScreen()
+//                case .loggedOut:
+//                    LoginScreen()
+//                case .firstTime:
+//                    OnboardingScreen()
+//                }
             }
             .onAppear() {
                 appMainStore.dispatch(action: .appOpened)
