@@ -18,7 +18,7 @@
 		C8BE2FAE2AEABBCA00B8608E /* ClashOfClansTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BE2FAD2AEABBCA00B8608E /* ClashOfClansTrackerApp.swift */; };
 		C8BE2FB22AEABBCB00B8608E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BE2FB12AEABBCB00B8608E /* Assets.xcassets */; };
 		C8BE2FB52AEABBCB00B8608E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BE2FB42AEABBCB00B8608E /* Preview Assets.xcassets */; };
-		C8BE2FBC2AEABBEB00B8608E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BE2FBB2AEABBEB00B8608E /* Store.swift */; };
+		C8BE2FBC2AEABBEB00B8608E /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BE2FBB2AEABBEB00B8608E /* Redux.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		C8BE2FAD2AEABBCA00B8608E /* ClashOfClansTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClashOfClansTrackerApp.swift; sourceTree = "<group>"; };
 		C8BE2FB12AEABBCB00B8608E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8BE2FB42AEABBCB00B8608E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C8BE2FBB2AEABBEB00B8608E /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		C8BE2FBB2AEABBEB00B8608E /* Redux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +60,24 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		C89B94852AEBF81B00082FB0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C8BE2FAD2AEABBCA00B8608E /* ClashOfClansTrackerApp.swift */,
+				C8A34F752AEBDD5300EABB02 /* AppReducer.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C89B94862AEBF82600082FB0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C89934692AEBEA5500CE59DB /* Auth.swift */,
+				C8BE2FBB2AEABBEB00B8608E /* Redux.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		C8BE2FA12AEABBCA00B8608E = {
 			isa = PBXGroup;
 			children = (
@@ -79,12 +97,10 @@
 		C8BE2FAC2AEABBCA00B8608E /* ClashOfClansTracker */ = {
 			isa = PBXGroup;
 			children = (
-				C8BE2FAD2AEABBCA00B8608E /* ClashOfClansTrackerApp.swift */,
+				C89B94852AEBF81B00082FB0 /* App */,
 				C8BE2FB12AEABBCB00B8608E /* Assets.xcassets */,
 				C8BE2FB32AEABBCB00B8608E /* Preview Content */,
-				C8BE2FBB2AEABBEB00B8608E /* Store.swift */,
-				C8A34F752AEBDD5300EABB02 /* AppReducer.swift */,
-				C89934692AEBEA5500CE59DB /* Auth.swift */,
+				C89B94862AEBF82600082FB0 /* Helper */,
 				C899346D2AEBED2200CE59DB /* Screens */,
 			);
 			path = ClashOfClansTracker;
@@ -175,7 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C899346A2AEBEA5500CE59DB /* Auth.swift in Sources */,
-				C8BE2FBC2AEABBEB00B8608E /* Store.swift in Sources */,
+				C8BE2FBC2AEABBEB00B8608E /* Redux.swift in Sources */,
 				C89934752AEBEE2700CE59DB /* LaunchScreen.swift in Sources */,
 				C899346F2AEBED2E00CE59DB /* OnboardingScreen.swift in Sources */,
 				C8A34F762AEBDD5300EABB02 /* AppReducer.swift in Sources */,
