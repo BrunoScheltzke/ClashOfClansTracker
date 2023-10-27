@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C899346A2AEBEA5500CE59DB /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89934692AEBEA5500CE59DB /* Auth.swift */; };
+		C899346C2AEBED1600CE59DB /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C899346B2AEBED1600CE59DB /* LoginScreen.swift */; };
+		C899346F2AEBED2E00CE59DB /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C899346E2AEBED2E00CE59DB /* OnboardingScreen.swift */; };
+		C89934712AEBED3F00CE59DB /* RootScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89934702AEBED3F00CE59DB /* RootScreen.swift */; };
+		C89934732AEBED4C00CE59DB /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89934722AEBED4C00CE59DB /* HomeScreen.swift */; };
+		C89934752AEBEE2700CE59DB /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89934742AEBEE2700CE59DB /* LaunchScreen.swift */; };
+		C89934782AEBF31D00CE59DB /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = C89934772AEBF31D00CE59DB /* KeychainAccess */; };
+		C8A34F762AEBDD5300EABB02 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A34F752AEBDD5300EABB02 /* AppReducer.swift */; };
+		C8BE2FAE2AEABBCA00B8608E /* ClashOfClansTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BE2FAD2AEABBCA00B8608E /* ClashOfClansTrackerApp.swift */; };
+		C8BE2FB22AEABBCB00B8608E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BE2FB12AEABBCB00B8608E /* Assets.xcassets */; };
+		C8BE2FB52AEABBCB00B8608E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BE2FB42AEABBCB00B8608E /* Preview Assets.xcassets */; };
+		C8BE2FBC2AEABBEB00B8608E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BE2FBB2AEABBEB00B8608E /* Store.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C89934692AEBEA5500CE59DB /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		C899346B2AEBED1600CE59DB /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		C899346E2AEBED2E00CE59DB /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		C89934702AEBED3F00CE59DB /* RootScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScreen.swift; sourceTree = "<group>"; };
+		C89934722AEBED4C00CE59DB /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		C89934742AEBEE2700CE59DB /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		C8A34F752AEBDD5300EABB02 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		C8BE2FAA2AEABBCA00B8608E /* ClashOfClansTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClashOfClansTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8BE2FAD2AEABBCA00B8608E /* ClashOfClansTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClashOfClansTrackerApp.swift; sourceTree = "<group>"; };
+		C8BE2FB12AEABBCB00B8608E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8BE2FB42AEABBCB00B8608E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8BE2FBB2AEABBEB00B8608E /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8BE2FA72AEABBCA00B8608E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C89934782AEBF31D00CE59DB /* KeychainAccess in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C899346D2AEBED2200CE59DB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C899346B2AEBED1600CE59DB /* LoginScreen.swift */,
+				C899346E2AEBED2E00CE59DB /* OnboardingScreen.swift */,
+				C89934702AEBED3F00CE59DB /* RootScreen.swift */,
+				C89934722AEBED4C00CE59DB /* HomeScreen.swift */,
+				C89934742AEBEE2700CE59DB /* LaunchScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C8BE2FA12AEABBCA00B8608E = {
+			isa = PBXGroup;
+			children = (
+				C8BE2FAC2AEABBCA00B8608E /* ClashOfClansTracker */,
+				C8BE2FAB2AEABBCA00B8608E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8BE2FAB2AEABBCA00B8608E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8BE2FAA2AEABBCA00B8608E /* ClashOfClansTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8BE2FAC2AEABBCA00B8608E /* ClashOfClansTracker */ = {
+			isa = PBXGroup;
+			children = (
+				C8BE2FAD2AEABBCA00B8608E /* ClashOfClansTrackerApp.swift */,
+				C8BE2FB12AEABBCB00B8608E /* Assets.xcassets */,
+				C8BE2FB32AEABBCB00B8608E /* Preview Content */,
+				C8BE2FBB2AEABBEB00B8608E /* Store.swift */,
+				C8A34F752AEBDD5300EABB02 /* AppReducer.swift */,
+				C89934692AEBEA5500CE59DB /* Auth.swift */,
+				C899346D2AEBED2200CE59DB /* Screens */,
+			);
+			path = ClashOfClansTracker;
+			sourceTree = "<group>";
+		};
+		C8BE2FB32AEABBCB00B8608E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C8BE2FB42AEABBCB00B8608E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8BE2FA92AEABBCA00B8608E /* ClashOfClansTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8BE2FB82AEABBCB00B8608E /* Build configuration list for PBXNativeTarget "ClashOfClansTracker" */;
+			buildPhases = (
+				C8BE2FA62AEABBCA00B8608E /* Sources */,
+				C8BE2FA72AEABBCA00B8608E /* Frameworks */,
+				C8BE2FA82AEABBCA00B8608E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClashOfClansTracker;
+			packageProductDependencies = (
+				C89934772AEBF31D00CE59DB /* KeychainAccess */,
+			);
+			productName = ClashOfClansTracker;
+			productReference = C8BE2FAA2AEABBCA00B8608E /* ClashOfClansTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8BE2FA22AEABBCA00B8608E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C8BE2FA92AEABBCA00B8608E = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = C8BE2FA52AEABBCA00B8608E /* Build configuration list for PBXProject "ClashOfClansTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8BE2FA12AEABBCA00B8608E;
+			packageReferences = (
+				C89934762AEBF31D00CE59DB /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
+			productRefGroup = C8BE2FAB2AEABBCA00B8608E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8BE2FA92AEABBCA00B8608E /* ClashOfClansTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8BE2FA82AEABBCA00B8608E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8BE2FB52AEABBCB00B8608E /* Preview Assets.xcassets in Resources */,
+				C8BE2FB22AEABBCB00B8608E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8BE2FA62AEABBCA00B8608E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C899346A2AEBEA5500CE59DB /* Auth.swift in Sources */,
+				C8BE2FBC2AEABBEB00B8608E /* Store.swift in Sources */,
+				C89934752AEBEE2700CE59DB /* LaunchScreen.swift in Sources */,
+				C899346F2AEBED2E00CE59DB /* OnboardingScreen.swift in Sources */,
+				C8A34F762AEBDD5300EABB02 /* AppReducer.swift in Sources */,
+				C89934732AEBED4C00CE59DB /* HomeScreen.swift in Sources */,
+				C8BE2FAE2AEABBCA00B8608E /* ClashOfClansTrackerApp.swift in Sources */,
+				C899346C2AEBED1600CE59DB /* LoginScreen.swift in Sources */,
+				C89934712AEBED3F00CE59DB /* RootScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C8BE2FB62AEABBCB00B8608E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C8BE2FB72AEABBCB00B8608E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8BE2FB92AEABBCB00B8608E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ClashOfClansTracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scheltzke.ClashOfClansTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8BE2FBA2AEABBCB00B8608E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ClashOfClansTracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scheltzke.ClashOfClansTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8BE2FA52AEABBCA00B8608E /* Build configuration list for PBXProject "ClashOfClansTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8BE2FB62AEABBCB00B8608E /* Debug */,
+				C8BE2FB72AEABBCB00B8608E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8BE2FB82AEABBCB00B8608E /* Build configuration list for PBXNativeTarget "ClashOfClansTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8BE2FB92AEABBCB00B8608E /* Debug */,
+				C8BE2FBA2AEABBCB00B8608E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C89934762AEBF31D00CE59DB /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C89934772AEBF31D00CE59DB /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C89934762AEBF31D00CE59DB /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C8BE2FA22AEABBCA00B8608E /* Project object */;
+}
