@@ -24,51 +24,52 @@ struct BaseLayoutScreen: View {
     }
     var body: some View {
         ScrollView {
-            VStack {
-                HStack {
-                    Menu("filter") {
-                        Button {
-                            filter = nil
+            LazyVGrid(columns: [GridItem(spacing: 64)]) {
+                if filteredBases.isEmpty {
+                    Text("emptybaselist")
+                } else {
+                    ForEach(filteredBases, id: \.self) { base in
+                        NavigationLink {
+                            //RestaurantDetailsView(restaurant: restaurant)
                         } label: {
-                            Text("reset")
-                        }
-                        Divider()
-                        ForEach(BaseCategory.allCases, id: \.self) { category in
-                            Button {
-                                filter = category
-                            } label: {
-                                Text(category.text)
-                            }
-                        }
-                    }
-                    Spacer()
-                }
-                .padding()
-                LazyVGrid(columns: [GridItem()]) {
-                    if filteredBases.isEmpty {
-                        Text("emptybaselist")
-                    } else {
-                        ForEach(filteredBases, id: \.self) { base in
-                            NavigationLink {
-                                //RestaurantDetailsView(restaurant: restaurant)
-                            } label: {
+                            VStack {
+                                Image(base.image)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(height: 200)
+                                    .shadow(radius: 10)
                                 HStack {
-                                    Image(base.image)
-                                        .resizable()
-                                        .frame(width: 100, height: 80)
-                                        .clipShape(.circle)
                                     Text(base.category.text)
-                                        .tint(.black)
+                                        .foregroundStyle(.gray)
                                     Spacer()
                                 }
-                                .padding(.horizontal)
                             }
+                            .padding(.horizontal)
                         }
                     }
                 }
             }
         }
         .navigationTitle("bestbasesforth\(townHall.rawValue)")
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Menu("filter") {
+                    Button {
+                        filter = nil
+                    } label: {
+                        Text("reset")
+                    }
+                    Divider()
+                    ForEach(BaseCategory.allCases, id: \.self) { category in
+                        Button {
+                            filter = category
+                        } label: {
+                            Text(category.text)
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
