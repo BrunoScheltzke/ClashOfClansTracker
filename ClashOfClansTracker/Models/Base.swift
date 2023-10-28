@@ -12,6 +12,7 @@ enum BaseCategory: CaseIterable {
     case farming
     case defense
     case troll
+    case progress
 
     var text: String { String(describing: self) }
 }

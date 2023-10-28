@@ -25,9 +25,11 @@
 		C8F7E6462AEC61B40088F16A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7E6452AEC61B40088F16A /* User.swift */; };
 		C8F7E6492AEC61F30088F16A /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7E6482AEC61F30088F16A /* State.swift */; };
 		C8F7E64B2AEC62340088F16A /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7E64A2AEC62340088F16A /* Middleware.swift */; };
-		C8F7E64D2AEC718D0088F16A /* BaseLayoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7E64C2AEC718D0088F16A /* BaseLayoutScreen.swift */; };
+		C8F7E64D2AEC718D0088F16A /* BaseListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7E64C2AEC718D0088F16A /* BaseListScreen.swift */; };
 		C8F7E64F2AED43EF0088F16A /* BaseLayoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7E64E2AED43EF0088F16A /* BaseLayoutService.swift */; };
-		C8F7E6522AED4B1B0088F16A /* BaseLayoutState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7E6512AED4B1B0088F16A /* BaseLayoutState.swift */; };
+		C8F7E6522AED4B1B0088F16A /* BaseListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7E6512AED4B1B0088F16A /* BaseListState.swift */; };
+		C8F7E6542AED5A670088F16A /* BaseDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7E6532AED5A670088F16A /* BaseDetailScreen.swift */; };
+		C8F7E6572AED5B5E0088F16A /* PillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7E6562AED5B5E0088F16A /* PillButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,9 +51,11 @@
 		C8F7E6452AEC61B40088F16A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C8F7E6482AEC61F30088F16A /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		C8F7E64A2AEC62340088F16A /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
-		C8F7E64C2AEC718D0088F16A /* BaseLayoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLayoutScreen.swift; sourceTree = "<group>"; };
+		C8F7E64C2AEC718D0088F16A /* BaseListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListScreen.swift; sourceTree = "<group>"; };
 		C8F7E64E2AED43EF0088F16A /* BaseLayoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLayoutService.swift; sourceTree = "<group>"; };
-		C8F7E6512AED4B1B0088F16A /* BaseLayoutState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLayoutState.swift; sourceTree = "<group>"; };
+		C8F7E6512AED4B1B0088F16A /* BaseListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListState.swift; sourceTree = "<group>"; };
+		C8F7E6532AED5A670088F16A /* BaseDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDetailScreen.swift; sourceTree = "<group>"; };
+		C8F7E6562AED5B5E0088F16A /* PillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +79,8 @@
 				C89934722AEBED4C00CE59DB /* HomeScreen.swift */,
 				C89934742AEBEE2700CE59DB /* LaunchScreen.swift */,
 				C8F7E63E2AEC5CAB0088F16A /* SettingsScreen.swift */,
-				C8F7E6502AED4B090088F16A /* BaseLayout */,
+				C8F7E6502AED4B090088F16A /* BaseList */,
+				C8F7E6552AED5A6B0088F16A /* BaseDetail */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 				C899346D2AEBED2200CE59DB /* Screens */,
 				C8F7E6402AEC5F510088F16A /* Localizable.xcstrings */,
 				C8F7E6442AEC61AA0088F16A /* Models */,
+				C8F7E6582AED5B690088F16A /* Components */,
 			);
 			path = ClashOfClansTracker;
 			sourceTree = "<group>";
@@ -148,13 +154,29 @@
 			path = Redux;
 			sourceTree = "<group>";
 		};
-		C8F7E6502AED4B090088F16A /* BaseLayout */ = {
+		C8F7E6502AED4B090088F16A /* BaseList */ = {
 			isa = PBXGroup;
 			children = (
-				C8F7E64C2AEC718D0088F16A /* BaseLayoutScreen.swift */,
-				C8F7E6512AED4B1B0088F16A /* BaseLayoutState.swift */,
+				C8F7E64C2AEC718D0088F16A /* BaseListScreen.swift */,
+				C8F7E6512AED4B1B0088F16A /* BaseListState.swift */,
 			);
-			path = BaseLayout;
+			path = BaseList;
+			sourceTree = "<group>";
+		};
+		C8F7E6552AED5A6B0088F16A /* BaseDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C8F7E6532AED5A670088F16A /* BaseDetailScreen.swift */,
+			);
+			path = BaseDetail;
+			sourceTree = "<group>";
+		};
+		C8F7E6582AED5B690088F16A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C8F7E6562AED5B5E0088F16A /* PillButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,19 +258,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C899346A2AEBEA5500CE59DB /* Auth.swift in Sources */,
+				C8F7E6572AED5B5E0088F16A /* PillButton.swift in Sources */,
 				C8BE2FBC2AEABBEB00B8608E /* Redux.swift in Sources */,
 				C89934752AEBEE2700CE59DB /* LaunchScreen.swift in Sources */,
 				C899346F2AEBED2E00CE59DB /* OnboardingScreen.swift in Sources */,
 				C8A34F762AEBDD5300EABB02 /* AppReducer.swift in Sources */,
 				C89934732AEBED4C00CE59DB /* HomeScreen.swift in Sources */,
-				C8F7E64D2AEC718D0088F16A /* BaseLayoutScreen.swift in Sources */,
+				C8F7E64D2AEC718D0088F16A /* BaseListScreen.swift in Sources */,
+				C8F7E6542AED5A670088F16A /* BaseDetailScreen.swift in Sources */,
 				C8BE2FAE2AEABBCA00B8608E /* ClashOfClansTrackerApp.swift in Sources */,
 				C899346C2AEBED1600CE59DB /* LoginScreen.swift in Sources */,
 				C8F7E6462AEC61B40088F16A /* User.swift in Sources */,
 				C8F7E63F2AEC5CAB0088F16A /* SettingsScreen.swift in Sources */,
 				C8F7E6492AEC61F30088F16A /* State.swift in Sources */,
 				C8F7E64F2AED43EF0088F16A /* BaseLayoutService.swift in Sources */,
-				C8F7E6522AED4B1B0088F16A /* BaseLayoutState.swift in Sources */,
+				C8F7E6522AED4B1B0088F16A /* BaseListState.swift in Sources */,
 				C89934712AEBED3F00CE59DB /* RootScreen.swift in Sources */,
 				C8F7E6432AEC61A70088F16A /* Base.swift in Sources */,
 				C8F7E64B2AEC62340088F16A /* Middleware.swift in Sources */,
@@ -385,6 +409,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ClashOfClansTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = M3PUPH2NBH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -413,6 +438,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ClashOfClansTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = M3PUPH2NBH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

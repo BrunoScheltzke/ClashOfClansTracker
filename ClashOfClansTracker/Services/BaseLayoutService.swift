@@ -10,13 +10,12 @@ import Foundation
 
 class BaseLayoutService {
     let bases: [BaseLayout] = [
-        BaseLayout(image: "", townHall: .fourteen, link: "", category: .farming),
-        BaseLayout(image: "", townHall: .fourteen, link: "", category: .defense),
-        BaseLayout(image: "", townHall: .fifteen, link: "", category: .troll),
-        BaseLayout(image: "", townHall: .fifteen, link: "", category: .war),
+        BaseLayout(image: "base_th15_1", townHall: .fifteen, link: "https://link.clashofclans.com/en?action=OpenLayout&id=TH15%3AHV%3AAAAADgAAAAJjrs748qrwFUukagBDCpXF", category: .defense),
+        BaseLayout(image: "war_th15_1", townHall: .fifteen, link: "https://link.clashofclans.com/en?action=OpenLayout&id=TH15%3AWB%3AAAAADgAAAAJjrt3KjoMgawkBAfhy2nkm", category: .war),
+        BaseLayout(image: "progress_th15_1", townHall: .fifteen, link: "https://link.clashofclans.com/en?action=OpenLayout&id=TH15%3AHV%3AAAAADgAAAAJjrtRo6HE8XUr47uA6-Gyh", category: .progress)
         ]
 
     func fetchBaseLayoutList(for townHall: TownHall) -> AnyPublisher<Result<[BaseLayout], Error>, Never> {
-        return Just(.success(bases.filter { $0.townHall == townHall })).delay(for: 2, scheduler: DispatchQueue.main).eraseToAnyPublisher()
+        return Just(.success(bases.filter { $0.townHall == townHall })).delay(for: 0, scheduler: DispatchQueue.main).eraseToAnyPublisher()
     }
 }
