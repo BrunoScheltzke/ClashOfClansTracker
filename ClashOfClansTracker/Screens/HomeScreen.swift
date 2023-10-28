@@ -14,7 +14,7 @@ struct HomeScreen: View {
                 LazyVGrid(columns: [GridItem(spacing: 16), GridItem(spacing: 16), GridItem(spacing: 16)], spacing: 16) {
                     ForEach(TownHall.allCases.reversed(), id: \.rawValue) { townHall in
                         NavigationLink {
-                            BaseLayoutScreen(townHall: townHall)
+                            BaseLayoutScreen(store: .init(initialState: .init(selectedTownHall: townHall), reducer: baseListReducer, middlewares: [baseListMiddleware()]))
                         } label: {
                             ZStack {
                                 Rectangle()

@@ -38,7 +38,7 @@ enum TownHall: Int, CaseIterable {
     case twelve
     case thirteen
     case fourteen
-    case fifhteen
+    case fifteen
 
     var image: String { "th\(rawValue)" }
 }
